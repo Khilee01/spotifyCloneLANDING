@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png"/>
+    <link rel="stylesheet" href="./style.css" >
+    <script src="https://kit.fontawesome.com/8a2e7e0724.js" crossorigin="anonymous"></script>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+      </svg>
+</head>
+<header class="headerClass">
+    <i class="fa-brands fa-spotify" style="color: white; font-size:35px; margin:10px;"></i>
+    <div class="alignRow">
+        <button class="homeBtn" >
+            <i class="fa-solid fa-house" style="color: white; font-size: 20px;"></i>
+        </button>
+        <div class="searchBar alignRow"> 
+            <div class="alignRow"> 
+                <i class="fa fa-magnifying-glass" style="margin-right:10px; font-size: 22px; color: #B2B2B2;"></i>
+                <p>What do you want to play?</p>
+            </div>
+            <div class="alignRow ">
+                <p>|</p>
+                <i><img src="browseIcon.png"/></i>
+            </div>
+        </div>
+    </div>
+    <div class="alignRow signlogin">
+        <p>Sign up</p>
+        <button >Log in</button>
+    </div>
+</header>
+<body>
+    <div class="mainContainer">
+        <div class="Panel left">
+            <div class="innerUpperContainer">
+                <div class="headingLibrary">
+                    <div class="library">
+                        <img src="libraryIcon.png" alt="Collapse Your library"/>
+                        <p>Your Library</p>
+                    </div>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="innermostContainer">
+                    <h3>Create your first playlist</h3>
+                    <p>It's easy we will help you</p>
+                    <button>Create playlist</button>
+                </div>
+                <div class="innermostContainer">
+                    <h3>Let's find some podcasts to follow</h3>
+                    <p>We will keep you updated on new episodes</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+            <div class="innerLowerContainer">
+                <div class="innermostLowerContainer"> 
+                    <ul>
+                        <li>Legal</li>
+                        <li>Safety & Privacy Center</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                        <li>AboutAds</li>
+                        <li>Accessibility</li>
+                    </ul>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                </div>
+                <button type="button" id="languageBtn">
+                    <img src="image.png" style="height: 25px;"/>
+                    <p style="margin-right:8px ;">English</p></button>
+            </div>
+        </div>
+        <div class="Panel right">
+            <div class="popularList">
+                <div class="popularHeading">
+                    <h1>Popular artists</h1>
+                    <p>Show all</p>
+                </div>
+                <ul class="artistImages">
+                    <li>
+                        <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" />
+                        <h3>Pritam</h3>
+                        <p>Artist</p>
+                    </li>
+                    <li>
+                        <img src="https://i.scdn.co/image/ab67616100005174bd6fbc7d0973cc33940781ad"/>
+                        <h3>Sachin-Jigar</h3>
+                        <p>Artist</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"/>
+                        <h3>A.R.Rahman</h3>
+                        <p>Artist</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" />
+                        <h3>Arjit Singh</h3>
+                        <p>Artist</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf"  />
+                        <h3>Vishal Shekhar</h3>
+                        <p>Artist</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84"/>
+                        <h3>Atif Aslam</h3>
+                        <p>Artist</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="popularList">
+                <div class="popularHeading">
+                    <h1>Popular albums and singles</h1>
+                    <p>Show all</p>
+                </div>
+                <ul class="popularImages">
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67616d00001e0209c9bf421422262c368009d6"  />
+                        <h3>Patandar</h3>
+                        <p>Arjan Dhillon,Mxrci</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88" />
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" />
+                        <h3>Aashiqui 2</h3>
+                        <p>Mithoon,Ankit Tiwari,Jeet Ganguli</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55"  />
+                        <h3>Jo Tum Mere Ho</h3>
+                        <p>Anuv Jain</p>
+                    </li>
+                    <li>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36" />
+                        <h3>Making Memories</h3>
+                        <p>Karan Aujja,Ikky</p>
+                    </li>
+                    <li>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" />
+                        <h3>Yeah Jawani Hai Deewani</h3>
+                        <p>Pritam</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="popularList">
+                <div class="popularHeading"v>
+                    <h1>Popular radio</h1>
+                    <p>Show all</p>
+                </div>
+                <ul class="popularImages">
+                    <li>
+                        <img  src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en"  />
+                        <p>With Sachin-Jigar,<br/> Vishal-Shekhar, Amit Tri..</p>
+                    </li>
+                    <li>
+                        <img  src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en"/>
+                        <p>With Karan Aujla,<br/> Shubh,Sindhu Moos..</p>
+                    </li>
+                    <li>
+                        <img  src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en" />
+                        <p>With A.R. Rahman,<br>Vishal-Shekhar, Atif...</p>
+                    </li>
+                    <li>
+                        <img  src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en"/>
+                        <p>With Pritam, Mohit<br> Chauhan, Armaan...</p>
+                    </li>
+                    <li>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1mYsTxnqsietFxj1OgoGbG/en" />
+                        <p>With Anirudh<br> Ravichander,...</p>
+                    </li>
+                    <li>
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7uIbLdzzSEqnX0Pkrb56cR/en"  />
+                        <p>With Badshah, Diljit<br>Dosanjh,Guru...</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="popularList">
+                <div class="popularHeading"v>
+                    <h1>Featured Charts</h1>
+                    <p>Show all</p>
+                </div>
+                <ul class="popularImages">
+                    <li>
+                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" />
+                        <p>Your weekly update of the most <br/> played tracks right now - Global.</p>
+                    </li>
+                    <li>
+                        <img  src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg"  />
+                        <p>Your weekly update of the most<br/>played tracks right now - USA.</p>
+                    </li>
+                    <li>
+                        <img  src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" />
+                        <p>Your daily update of the most<br/>played tracks right now - Global.</p>
+                    </li>
+                    <li>
+                        <img  src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg"/>
+                        <p>Your daily update of the most<br/>played tracks right now - USA.</p>
+                    </li>
+                    <li>
+                        <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"  />
+                        <p>Your daily update of the most<br/>viral tracks right now - Global.</p>
+                    </li>
+                    <li>
+                        <img  src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_us_default.jpg" />
+                        <p>Your daily update of the most<br/>viral tracks right now - USA.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="popularList">
+                <div class="popularHeading"v>
+                    <h1>2024 Wrapped</h1>
+                    <p>Show all</p>
+                </div>
+                <ul class="popularImages">
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67706f00000002dc114e72c4b42ac570cd4e99"/>
+                        <p>Editor's picks: The best R&B<br/> songs of 2024. Cover:Muni...</p>
+                    </li>
+                    <li>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d9b4d9b3682fbf8ed557469d"/>
+                        <p>Our editor's top picks for the<br/> best Jazz songs of the year...</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67706f00000002408c477f36ce06d925785963"  />
+                        <p>The songs that got us to sleep<br/>this year.#spotifywrapped</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67706f00000002b5118a7bdb84f8cb1deb7d41" />
+                        <p>The most streamed artists of <br/>2024.Cover: Taylor Swift</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67706f0000000267fb04edf290ed08fa5df846" />
+                        <p>Ambient highlights of 2024<br/>.Aphex Twin on cover....</p>
+                    </li>
+                    <li>
+                        <img  src="https://i.scdn.co/image/ab67706f00000002f02a0f941c5389aca92b6ca3" />
+                        <p>Our editor's pick of the best lofi <br/>tunes this year.Study, relax, se..</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="tableIcons">
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Company</th>
+                        <th>Communities</th>
+                        <th>Useful Links</th>
+                        <th>Spotify Plans</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>About</td>
+                        <td>For Artists</td>
+                        <td>Support</td>
+                        <td>Premium Individual</td>
+                      </tr>
+                      <tr>
+                        <td>Jobs</td>
+                        <td>Developers</td>
+                        <td>Free Mobile App</td>
+                        <td>Premium Duo</td>
+                      </tr>
+                      <tr>
+                        <td>For the Record</td>
+                        <td>Advertising</td>
+                        <td></td>
+                        <td>Premium Family</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Investors</td>
+                        <td></td>
+                        <td>Premium Student</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>Vendors</td>
+                        <td></td>
+                        <td>Spotify Free</td>
+                      </tr>
+                    </tbody>
+                </table>
+                <div class="icons">
+                    <button type="button" class="iconBtn">
+                        <i class="fa-brands fa-instagram"></i>
+                    </button>
+                    <button type="button" class="iconBtn">
+                        <i class="fa-brands fa-twitter"></i>
+                    </button>
+                    <button type="button" class="iconBtn"> 
+                        <i class="fa-brands fa-facebook"></i>
+                    </button>
+                </div>
+            </div>
+            <hr style="color: #B2B2B2; width: 98%; margin-top: 25px; ">
+            <div class="copyRight">
+                <i class="fa-regular fa-copyright"></i>
+                <p>2024 Spotify AB</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerInner">
+            <h4>Preview of Spotify</h4>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads.No credit card needed.</p>
+        </div>
+        <button type="button" class="signUpBtn">Sign up free</button>
+    </div>
+</body>
+
+</html>
